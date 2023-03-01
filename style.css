@@ -1,0 +1,1060 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Import Section  */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+/* Media Queries  */
+
+@media only screen and (max-width: 910px) {
+    #header {
+        display: none;
+    }
+}
+
+
+/* Font Alignment  */
+html {
+    font-size: 62.5%;
+    /* 1rem = 10px  */
+}
+
+@media only screen and (min-width:1370px) and (max-width: 2652px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+@media only screen and (min-width: 910px) and (max-width:1000px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+@media only screen and (min-width: 320px) and (max-width:1000px) {
+    html {
+        font-size: 65%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        display: none;
+    }
+}
+
+#header {
+    background-color: beige;
+    min-height: 12rem;
+    font-family: 'Inconsolata', monospace;
+}
+
+.leftcont {
+    /* border: 2px solid purple; */
+    display: inline-flex;
+    min-width: 33%;
+    min-height: 12rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.leftcontent {
+    /* border: 2px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    line-height: 2.2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.leftcontent h5 {
+    font-size: 2rem;
+}
+
+.leftcontent span {
+    font-size: 1.7rem;
+}
+
+.emailgraphic {
+    display: inline-flex;
+}
+
+.emailicon {
+    max-height: 5rem;
+}
+
+/* Header Center Headings  */
+
+.centerheading {
+    /* border: 2px solid red; */
+    position: absolute;
+    display: inline-flex;
+    flex-shrink: 3;
+    min-height: 8rem;
+    min-width: 33%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #E88F2A;
+}
+
+.centercontent {
+    font-size: 2rem;
+    font-weight: lighter;
+    border: .1rem solid white;
+    /* padding: 1rem 12rem 1rem 12rem ; */
+    width: 92%;
+    display: flex;
+    justify-content: center;
+}
+
+.centercontent h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.centercontent img {
+    height: 4.5rem;
+    margin-left: -3rem;
+    margin-right: .8rem;
+    margin-top: .6rem;
+}
+
+
+.rightcont {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    /* position: relative; */
+    min-height: 12rem;
+    width: 33%;
+    /* border: 2px solid red; */
+}
+
+.rightcontent {
+    /* border: 2px solid red; */
+    display: inline-flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    line-height: 2.2rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.rightcontent h5 {
+    font-size: 2rem;
+}
+
+.rightcontent span {
+    font-size: 1.7rem;
+}
+
+.phonegraphic {
+    display: inline-flex;
+}
+
+.callicon {
+    max-height: 5.5rem;
+}
+
+/* NavBar  */
+
+#navbar {
+    display: flex;
+    background-color: #2b2825;
+    min-height: 10rem;
+    font-size: 2.1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    #navbar {
+        display: none;
+    }
+}
+
+.navitems {
+    /* border: 2px solid red; */
+    display: inline-flex;
+    flex-direction: row;
+    min-height: 10rem;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.navitems a {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+
+}
+
+.navitems a:hover {
+    color: #E88F2A;
+}
+
+/* Dropdown  */
+
+.ndropdown {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.ndropdown .ndropbtn {
+    cursor: pointer;
+    font-family: 'Anton', sans-serif;
+    font-weight: bold;
+    font-size: 2.3rem;
+    border: none;
+    outline: none;
+    background-color: #2b2825;
+    color: white;
+}
+
+.ndropbtn:hover {
+    color: #E88F2A;
+}
+
+.ndropdown-content {
+    font-family: 'Anton', sans-serif;
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.ndropdown-content a {
+    float: none;
+
+    color: black;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    font-size: 1.9rem;
+    display: block;
+    text-align: left;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0rem .8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.ndropdown:hover .ndropdown-content {
+    display: block;
+}
+
+/* Phone Navbar  */
+
+.ndropdown-p {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.ndropdown-p .ndropbtn-p {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-left: 1rem;
+    color: white;
+}
+
+.ndropbtn-p:hover {
+    color: #E88F2A;
+}
+
+.ndropdown-p:hover .ndropdown-content-p {
+    display: block;
+}
+
+.ndropdown-content-p a:hover {
+    color: #E88F2A;
+}
+
+.ndropdown-content-p {
+    font-family: 'Anton', sans-serif;
+    display: none;
+    font-size: 1rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.ndropdown-content-p a {
+    float: none;
+
+    color: black;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    text-align: left;
+    background-color: #f9f9f9;
+    /* min-width: 160px; */
+    box-shadow: 0rem .8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+#navfont {
+    font-size: 2rem;
+}
+
+#navheading {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #E88F2A;
+
+}
+
+#dropbutton {
+    color: white;
+}
+
+#dropdownfonts {
+    font-size: 2rem;
+}
+
+#phone-nav-logo {
+    height: 3rem;
+
+}
+
+@media only screen and (min-width:801px) {
+    .phone-navbar {
+        display: none;
+    }
+
+}
+
+
+/* Desiging Welcome Page  */
+
+.welcome-section {
+
+    background-image: url("cake-image.jpg");
+    height: 80rem;
+    /* min-width: ; */
+    /* background-position: center; */
+    background-repeat: no-repeat;
+}
+
+
+.parent-welcome-content {
+    /* border: 2px solid purple; */
+    display: inline-flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 22rem;
+    margin-left: 11rem;
+}
+
+@media only screen and (max-width:812px) {
+
+    .parent-welcome-content {
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (max-width:588px) {
+    .parent-welcome-content {
+        margin-left: 1rem;
+    }
+}
+
+
+.welcome-content>.cursive-heading {
+    font-family: 'Pacifico', cursive;
+    font-weight: bolder;
+    color: #E88F2A;
+}
+
+.welcome-content {
+    line-height: 12rem;
+}
+
+.welcome-content h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-size: 8rem;
+    font-weight: bolder;
+    line-height: 12rem;
+}
+
+.welcome-content p {
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (min-width:52px) and (max-width:512px) {
+    .welcome-content h1 {
+        font-size: 4rem;
+
+    }
+
+    .welcome-content p {
+        font-size: 3rem;
+    }
+}
+
+.read-more-btn{
+    width: 23%;
+    display: flex;
+    height: 5rem;
+    background-color: #E88F2A;
+    color: white;
+    font-size: 2.1rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    border: transparent;
+    border-radius: 1.5rem;
+}
+
+.read-more-btn:hover{
+    color: black;
+    background-color: #e98616;
+}
+
+@media only screen and (max-width:560px){
+
+    .read-more-btn{
+       
+        font-size: 1.5rem;
+    }
+    
+}
+@media only screen and (max-width:396px){
+
+    .read-more-btn{
+       
+        font-size: 1rem;
+    }
+    
+}
+@media only screen and (max-width:260px){
+
+    .read-more-btn{
+       
+        font-size: .8rem;
+    }
+    
+}
+
+/* Designnig About Us  */
+
+.about-us{
+    /* display: flex; */
+    /* border: 2px solid red; */
+    background-color: white;
+    height: rem;
+    width: 100%;
+    font-family: 'Inconsolata', monospace;
+    /* margin-top: 8rem; */
+}
+
+.about-us-heading{
+    display: inline-flex;
+    height: 11rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid purple; */
+    margin-top: 5rem;
+    font-family: 'Pacifico', cursive;
+    color: #E88F2A;
+}
+
+.about-us-heading h1{
+    font-weight: bolder;
+    font-size: 3.7vw;
+}
+.about-us-heading h2{
+    padding-top: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: bolder;
+    font-size: 3.7vw;
+    color:#2b2825;
+}
+
+@media only screen and (min-width:1410px){
+    .about-us-heading h1{
+       
+        font-size: 4.5rem;
+    }
+    .about-us-heading h2{
+       
+        font-size: 4.5rem;
+
+    }
+}
+.parent-about-content{
+    display: flex;
+}
+.parent-about-content img{
+    border: 1px solid white;
+    border-radius: 1.5rem;
+    width: 42%;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    min-height: 32rem;
+}
+
+
+.left-content{
+    display: inline-flex;
+    /* border: 2px solid red;     */
+    flex-direction: column;
+    width: 50%;
+    /* height: 27rem;   */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+
+.main-heading{
+    font-size: 2vw;
+    font-weight: bolder;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sub-heading{
+    padding-top: 3rem;
+    font-size: 1.7vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+@media screen and (max-width:740px) {
+
+    .parent-about-content img{
+       min-height: 27rem;
+       min-width: 50%;
+        margin: auto;
+    }
+    .left-content{
+        /* display: none; */
+        margin: auto;
+        padding-top:4rem;
+        width: 80%;
+        text-align: center;
+    }
+    .parent-about-content{
+        display: flex;
+        flex-direction: column;
+    }
+    .sub-heading{
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width:280px){
+    .parent-about-content img{
+        min-height: 18rem;
+     }
+}
+
+.horizontal-data{
+    display: flex;
+    min-height: 20rem;
+    /* border: 2px solid red; */
+    background-image: url("horizontal-bg.jpg");
+    /* background-color: #2b2825; */
+    background-position: center;
+    
+    font-family: 'Inconsolata', monospace;
+}
+
+.parent-horizontal-data{
+    min-width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    color: white;
+
+}
+
+.data-content{
+    /* border: 2px solid purple; */
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.data-content>h3{
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #ffff;
+}
+.data-content>h4{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.icon-graphic{
+    display: inline-flex;
+    background-color: #E88F2A;
+    border: 0.01rem solid white;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:683px) {
+
+    .parent-horizontal-data{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start ;
+    }
+    
+    .data-content{
+       margin-left: 6.7rem;
+       padding-top: 1.7rem;
+       padding-bottom: 2.3rem;
+    }
+}
+
+/* Designing Menus and pricings  */
+
+.menu-pricing{
+    display: flex;
+    height: 122rem;
+    background-color:white;
+    /* border: 2px solid red; */
+    background-image: url("cake-content-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+@media screen and (max-width:320px) {
+
+    .menu-pricing{
+        height: 150rem;
+
+    }
+    
+}
+
+.parent-menu-pricing{
+    width: 100%;
+    z-index: 2;
+}
+
+.main-heading{
+    /* margin-top: 6rem; */
+    margin-top: 6rem;
+    /* border: 2px solid pink; */
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+}
+
+.main-heading>h1{
+    font-size: 200%; 
+    color:#E88F2A ;
+    font-weight: bolder;
+}
+.main-heading>h2{
+    padding-top: 2rem;
+    font-family: 'Anton', sans-serif;
+    /* font-size: 4.5rem; */
+    font-size: 160%;
+    font-weight: bolder;
+    color: white;
+}
+
+/* Designing Birthday Cakes  */
+
+.birthday-cakes{
+    margin-top: 7rem;
+    /* border: 2px solid gray; */
+    text-align: center;    
+    font-family: 'Poppins', sans-serif; 
+}
+.border-design{
+    border-radius: 1rem;
+    /* border: 2px solid black; */
+    display: inline-block;
+    /* border: 2px solid rgb(141, 55, 55); */
+    background-color: #E88F2A;
+}
+.birthday-cakes h1{
+    margin-bottom: 0;
+    align-items: center;
+    padding: 1rem 1rem 1rem 1rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.birthday-cakes-menu{
+    margin-top: 6rem;
+    /* border: 2px solid purple; */
+    display: grid;
+    justify-content: center;
+    /* background-image: url("cake-content-bg.jpg"); */
+}
+
+.birthday-cakes-content{
+    border-radius: 1rem;
+    /* border: 2px solid wheat; */
+    display: inline-flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.b-image img{
+   height: 14rem;
+   border-radius: 1.2rem;
+
+}
+.text-content{
+   padding: 4rem 1rem 0rem 1rem;
+   background-color: #FAF3EB;
+   font-family: 'Roboto Condensed', sans-serif;
+   margin-left: 1rem;
+   border-radius:1.5rem ;
+}
+
+.text-content>h2{
+    font-weight: bolder;
+}
+
+.text-content>p{
+    font-size: 1.5rem;
+}
+
+ /* Designing Menu-Cards  */
+
+.parent-cake-cards{
+    display: flex;
+}
+
+.cake-cards{
+    display: inline-flex;
+    /* border: 2px solid red; */
+    min-height: 30rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.cards{
+    display: grid;
+    /* font-family: 'Tilt Prism', cursive; */
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    height: 25rem;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #E88F2A;
+    color: white;
+    border-radius: 1rem;
+    /* padding: 6.5rem 2rem 0rem 2rem; */
+}
+@media screen and (max-width:670px) {
+
+    .cake-cards{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    .cards{
+        width: 50%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+.cards h1{
+    color: black ;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.cards p{
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+    /* Disocunt page  */
+.discount-container{
+    border: .1px solid white;
+    min-height: 22rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("discount-bg-modified.jpg");
+    margin-top: -15rem;
+}
+
+.discount-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30rem;
+    margin-bottom: 2rem;
+    /* border: 2px solid black; */
+}
+
+.discount-content h1{
+    font-weight: bolder;
+    font-size: 3.75rem;
+    color: white;
+    text-align: center  ;
+    
+}
+@media  screen and (max-width:667px) {
+
+    .discount-content h1{
+        font-weight: bolder;
+        font-size: 1.75rem;
+        color: white;
+    }
+    
+}
+.discount-content input{
+    margin-top: 1.5rem;
+    font-weight: bolder;
+    font-size: 2rem;
+    background-color: #E88F2A;
+    color: white ;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 1rem;
+    border: transparent;
+}
+.discount-content input:hover{
+    background-color: #d8801b;
+    color: rgb(66, 64, 64);
+}
+
+    /* Designing Master Chefs  */
+
+
+
+.master-chefs{
+    height: 100rem;
+    /* border: 2px solid red; */
+}
+@media screen and (max-width:650px) {
+
+    .master-chefs{
+        height: 215rem;
+        /* border: 2px solid red; */
+    }
+    
+}
+
+.upper-heading{
+    /* border: 2px solid gray; */
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.upper-heading h1{
+    font-weight: bolder;
+    color:#e98616;
+    font-size: 3.5rem;
+    font-family: 'Pacifico', cursive;
+}
+.upper-heading h2{
+    text-align: center;
+   font-size: 4.5rem;
+   font-weight: bolder;
+   padding-top: 2.1rem;
+}
+
+.master-chef-cards{
+    /* border: 2px solid green; */
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 10rem;
+    width: 100%;
+    height: 62rem;
+}
+
+.chef-card{
+    /* border: 2px solid purple; */
+    width: 30%;
+    height: 60rem;
+}
+@media screen and (max-width:650px) {
+
+    .master-chef-cards{
+        display: inline-flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+    }
+    
+    .chef-card{
+        /* border: 2px solid purple; */
+        width: 70%;
+        height: 60rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width:320px){
+    .chef-card{
+        /* border: 2px solid purple; */
+        width: 80%;
+       
+    }
+}
+.image-area{
+    height: 38rem;
+    /* border: 2px solid pink; */
+    background-image: url("chef-img.jpg");
+    background-position: center;
+}
+.image-area1{
+    height: 38rem;
+    /* border: 2px solid pink; */
+    background-image: url("chef-img1.jpg");
+    background-position-x: center;
+}
+.image-area2{
+    height: 38rem;
+    /* border: 2px solid pink; */
+    background-image: url("chef-img2.jpg");
+    background-position: center;
+}
+
+.lower-content{
+    height: 15rem;
+    /* border: 2px solid slateblue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2b2825;
+}
+
+.lower-content h1{
+    text-align: center;
+    font-weight: bolder;
+    color: #e98616;
+    font-size: 3rem;
+
+}
+
+.lower-content h4{
+    padding-top: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Special Combo Offer  */
+
+.special-combo{
+    /* border: 2px solid red; */
+    height: 75rem;
+    background-image: url("combo-bg.jpg");
+    background-position: center;
+    display: block;
+}
+.special-content{
+    margin-top: 10rem;
+    padding-top: 10rem;
+}
+
+
+.special-content h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: #e98616;
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+.special-content h2{
+    padding-top: 1rem;
+    font-size: 3.7rem;
+    text-align: center;
+    color:white;
+    font-weight: bolder;
+}
+.special-content p{
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+    color: white;
+}
+
+.special-input-buttons{
+    display: inline-flex;
+    margin-top: 8rem;
+    width: 100%;
+    justify-content: center;
+}
+
+#shop-now{
+    background-color: #E88F2A;
+    height: 6rem;
+    width: 12rem;
+    margin-right: 3rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1rem;
+    border: transparent;
+}
+#shop-now:hover{
+    background-color: #e98616;
+    color: #2b2825;
+    cursor: pointer;
+}
+#read-more{
+    margin-left:3rem ;
+    height: 6rem;
+    width: 12rem;
+    font-size: 2rem;
+    background-color: #2b2825;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 1rem;
+    border: transparent;
+}
+#read-more:hover{
+   color:#e98616;
+}
+
+.random-img{
+    height: 40rem;
+    background-image: url("adrien-olichon-gvWGbG4uiKI-unsplash.jpg");
+    background-position: center;
+    background-attachment: fixed;
+}
